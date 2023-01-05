@@ -1,0 +1,170 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 95vw;
+}
+
+.main{
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid rgb(126, 91, 91);
+    width: 1000px;
+    /* margin: 0 auto; */
+}
+
+#title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+}
+
+#title h2{
+margin-top: 2rem;
+margin-bottom: 2px;
+}
+#title p{
+color: rgb(125, 125, 223);
+}
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+
+}
+
+#search-article{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+#search{
+    border-radius: 5px;
+    font-size: 1.6rem;
+    caret-color: black;
+}
+#searchBtn{
+    color: red;
+    font-size: 1.3rem;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px rgb(211, 11, 218);
+}
+
+#searchBtn:hover{
+    background: red;
+    color: white;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    color: dodgerblue;
+}
+
+#movie-poster{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about{
+    display:grid;
+    align-items: center;
+}
+.about p{
+color: rgb(212, 39, 39);
+font-weight: bolder;
+margin-bottom: 5px;
+background: rgb(7, 241, 191);
+}
+
+@media screen and (max-width:600px) {
+#movie-poster{
+    width: 250px;
+    height: 250px;
+}
+
+.content-area {
+    width: 400px;
+    margin: 0 auto;
+}
+#title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+#search-article {
+    display: flex;
+    align-items: center;
+    margin: 0 5px 2rem 10px;
+}
+#search {
+    display: flex;
+    font-size: 1.3rem;
+}
+#searchBtn {
+    display: flex;
+    font-size: 1.5rem;
+}
+.results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.about {
+    align-items: center;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.results {
+    flex-direction: column;
+    }
+}
+
+#loading-spinner {
+display: none;
+}
+
+/* #loading-spinner.active{
+    display: block;
+} */

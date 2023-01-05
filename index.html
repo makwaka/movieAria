@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section  class="section-center">
+        <div class="main">
+            <header id="title">
+                <h2>Movie Aria</h2>
+                <p>Search all your favorite movies</p>
+            </header>
+            <section class="content-area">
+                <article id="search-article">
+                    <input id="search" type="text" placeholder="Enter movie name here">
+                    <button type="button" id="searchBtn">Search</button>
+                </article>
+                <div id="loading-spinner">
+                    <img src="./ATB3o.gif" alt="loading">
+                </div>
+
+                <article class="results">
+                    <div>
+                        <p id="movie-title">TITLE: AVATAR</p>
+                        <img id="movie-poster" src="./avatar-2-poster.jpg" alt="movie poster">
+                    </div>
+                    <div class="about">
+                        <p id="actors">Main Actor(s): Sam Worthington, Zoe Saldana</p>
+                        <p id="movie-type">MOVIE TYPE: MOVIE</p>
+                        <p id="year">YEAR: 2009</p>
+                        <p id="time">Running Time(minutes): 162</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+    <script  type="module" src="main.js"></script>
+    <script  type="text/javascript" src="config.js"></script>
+</body>
+</html>
